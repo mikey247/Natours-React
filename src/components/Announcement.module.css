@@ -1,0 +1,8 @@
+.announcement {
+  height: 50px;
+  text-align: center;
+  background-color: #000000;
+  padding: 1px;
+  color: white;
+  /* border: 2px solid gold; */
+}

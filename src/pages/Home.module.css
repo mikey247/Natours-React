@@ -1,0 +1,36 @@
+.container {
+  padding-top: 30px;
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../../public/assets/giraffe.jpg") fixed center;
+  background-size: 100rem 70rem;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  width: 95%;
+  margin: auto;
+  text-align: center;
+}
+.wrapper h1 {
+  margin-top: 80px;
+  font-size: 60px;
+  font-weight: 700;
+  color: rgb(50, 50, 50);
+}
+.wrapper button {
+  background-color: transparent;
+  font-size: 20px;
+  height: 60px;
+  width: 300px;
+
+  transition: all 0.5s ease;
+}
+.wrapper button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
