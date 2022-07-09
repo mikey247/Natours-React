@@ -1,0 +1,45 @@
+.navContainer {
+  height: 60px;
+  margin-bottom: 10px;
+  background-color: burlywood;
+  padding-bottom: 20px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.left {
+  flex: 1;
+}
+.center {
+  flex: 1;
+  text-align: center;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 50px;
+}
+
+.right a,
+.left a {
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 25px;
+
+  transition: font-size 0.5s ease 0.5s;
+}
+
+.right a:hover,
+.left a:hover {
+  font-size: 20px;
+}
