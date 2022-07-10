@@ -1,11 +1,32 @@
 /*  */
 
 .offerContainer {
+  background-color: #9e9e9e;
+  padding: 25px;
+}
+.offerWrapper {
   width: 75%;
   margin: auto;
   text-align: center;
 }
+.offerContainer h1 {
+  font-size: 45px;
+}
 
-.offerContainer p {
+.offerWrapper p {
   font-size: 20px;
+}
+
+.offerWrapper button {
+  background-color: transparent;
+  font-size: 20px;
+  height: 60px;
+  width: 300px;
+
+  transition: all 0.5s ease;
+}
+.offerWrapper button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
 }

@@ -64,6 +64,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className={classes.signature}>
+        <p>Made with 💙 by mikey24_7🐱‍👤.</p>
+      </div>
     </footer>
   );
 };

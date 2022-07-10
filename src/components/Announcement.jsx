@@ -1,9 +1,9 @@
 import classes from "./Announcement.module.css";
 
-const Announcement = () => {
+const Announcement = (props) => {
   return (
     <div className={classes.announcement}>
-      <p>THE MOST AMAZING LOCATIONS FOR THE BEST PRICES.✌🏾</p>
+      <p>{props.text}</p>
     </div>
   );
 };

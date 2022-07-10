@@ -10,7 +10,9 @@ function App() {
   return (
     <>
       <NavBar />
-      <Announcement />
+      <Announcement
+        text={"THE MOST AMAZING LOCATIONS FOR THE BEST PRICES.✌🏾"}
+      />
       <Home />
       <Offer />
       <Footer />
