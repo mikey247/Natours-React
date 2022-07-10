@@ -1,0 +1,11 @@
+/*  */
+
+.offerContainer {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+.offerContainer p {
+  font-size: 20px;
+}
