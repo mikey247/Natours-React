@@ -16,22 +16,33 @@ const Home = () => {
           <motion.h1
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ type: "spring", delay: 3, duration: 5 }}
+            transition={{ type: "spring", delay: 2, duration: 3.5 }}
           >
             COME AND EXPLORE NATURE WITH US
           </motion.h1>
           <motion.button
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ type: "spring", delay: 3.5, duration: 5 }}
+            transition={{ type: "spring", delay: 3, duration: 4 }}
           >
             START EXPLORING🌍✈
           </motion.button>
         </div>{" "}
       </motion.div>
 
-      <div className={classes.some}>
-        <div className={classes.some1}>
+      <motion.div className={classes.some}>
+        <motion.div
+          className={classes.some1}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            type: "spring",
+            duration: 3,
+            ease: "easeIn",
+            delay: 0.2,
+          }}
+        >
           <img
             src={require("../images/Lafiaji-beach.jpg")}
             alt="Lafiaji Beaches"
@@ -44,10 +55,22 @@ const Home = () => {
               totam! Impedit a possimus consequuntur quos quod. Sed eligendi
               praesentium ipsam sint mollitia!
             </p>
+            <button>LEARN MORE</button>
           </div>
-        </div>
+        </motion.div>
 
-        <div className={classes.some2}>
+        <motion.div
+          className={classes.some2}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{
+            type: "spring",
+            duration: 3,
+            ease: "easeIn",
+            delay: 0.2,
+          }}
+        >
           <div>
             <h1>BATHE IN THE WATERFALLS OF ERIN-IJESHA</h1>
             <p>
@@ -56,13 +79,14 @@ const Home = () => {
               eos dignissimos consequatur? A ullam aperiam quisquam officia quam
               nulla qui nisi distinctio!
             </p>
+            <button>LEARN MORE</button>
           </div>
           <img
             src={require("../images/erin-ijesha-waterfalls.jpg")}
             alt="Erin-Ijesha Waterfalls"
           />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </>
   );
 };

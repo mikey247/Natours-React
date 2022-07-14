@@ -2,7 +2,7 @@
 
 .offerContainer {
   background-color: #9e9e9e;
-  padding: 50px;
+  padding: 80px;
 }
 .offerWrapper {
   width: 75%;
@@ -30,4 +30,40 @@
   background-color: black;
   color: white;
   transform: scale(1.1);
+}
+
+.news {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
+  text-align: center;
+  padding: 80px;
+}
+.news h1 {
+  font-size: 45px;
+}
+.news p {
+  font-size: 30px;
+}
+.news div {
+  width: 50%;
+  height: 50px;
+  margin: auto;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid lightgray;
+}
+.news input {
+  font-size: 20px;
+  border: none;
+  flex: 4;
+  padding-left: 20px;
+}
+.news button {
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 20px;
 }
