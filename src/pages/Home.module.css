@@ -1,3 +1,12 @@
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 70%;
+  }
+}
+
 .container {
   padding-top: 30px;
   height: 100vh;
@@ -8,6 +17,9 @@
     url("../../public/assets/giraffe.jpg") fixed center;
   background-size: 100rem 70rem;
   background-repeat: no-repeat;
+
+  /* animation: animatedBackground 15s linear infinite alternate;
+  -webkit-animation: animatedBackground 15s linear infinite alternate; */
 }
 
 .wrapper {
@@ -20,12 +32,35 @@
   font-size: 60px;
   font-weight: 700;
   color: rgb(50, 50, 50);
+
+  /* animation-name: fade-in;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+
+  -webkit-animation-name: fade-in;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-direction: alternate; */
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
 }
 .wrapper button {
   background-color: transparent;
   font-size: 20px;
   height: 60px;
   width: 300px;
+  cursor: pointer;
+  margin-top: 40px;
 
   transition: all 0.5s ease;
 }
@@ -33,4 +68,43 @@
   background-color: black;
   color: white;
   transform: scale(1.1);
+}
+
+.some img {
+  width: 50%;
+  height: 50rem;
+}
+
+.some1 {
+  display: flex;
+  background-color: tan;
+}
+.some1 div {
+  width: 50%;
+  padding-top: 300px;
+}
+.some1 h1 {
+  margin-left: 30px;
+}
+.some1 p {
+  margin-left: 30px;
+  width: 90%;
+  font-size: 18px;
+}
+
+.some2 {
+  display: flex;
+  background-color: tan;
+}
+.some2 div {
+  width: 50%;
+  padding-top: 300px;
+}
+.some2 h1 {
+  margin-left: 30px;
+}
+.some2 p {
+  margin-left: 30px;
+  width: 90%;
+  font-size: 18px;
 }

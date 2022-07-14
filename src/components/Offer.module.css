@@ -2,14 +2,14 @@
 
 .offerContainer {
   background-color: #9e9e9e;
-  padding: 25px;
+  padding: 50px;
 }
 .offerWrapper {
   width: 75%;
   margin: auto;
   text-align: center;
 }
-.offerContainer h1 {
+.top {
   font-size: 45px;
 }
 
@@ -22,6 +22,7 @@
   font-size: 20px;
   height: 60px;
   width: 300px;
+  margin: 20px;
 
   transition: all 0.5s ease;
 }
