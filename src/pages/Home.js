@@ -2,6 +2,7 @@
 
 import classes from "./Home.module.css";
 import { motion } from "framer-motion";
+import Offer from "../components/Offer";
 
 const Home = () => {
   return (
@@ -38,9 +39,9 @@ const Home = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            duration: 3,
+            duration: 2,
             ease: "easeIn",
-            delay: 0.2,
+            // delay: 0.2,
           }}
         >
           <img
@@ -66,9 +67,9 @@ const Home = () => {
           viewport={{ once: true }}
           transition={{
             type: "spring",
-            duration: 3,
+            duration: 2,
             ease: "easeIn",
-            delay: 0.2,
+            // delay: 0.2,
           }}
         >
           <div>
@@ -87,6 +88,8 @@ const Home = () => {
           />
         </motion.div>
       </motion.div>
+
+      <Offer />
     </>
   );
 };

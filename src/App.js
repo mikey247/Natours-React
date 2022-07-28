@@ -3,8 +3,11 @@
 import Announcement from "./components/Announcement";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
-import Offer from "./components/Offer";
 import Home from "./pages/Home";
+import Register from "./pages/Register";
+
+import { Route, Routes } from "react-router-dom";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -13,8 +16,11 @@ function App() {
       <Announcement
         text={"THE MOST AMAZING LOCATIONS FOR THE BEST PRICES.✌🏾"}
       />
-      <Home />
-      <Offer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
       <Footer />
     </>
   );

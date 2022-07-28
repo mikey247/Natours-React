@@ -1,0 +1,32 @@
+.register {
+  background-color: antiquewhite;
+  /* border: 2px solid red; */
+  height: 25rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+input {
+  border: none;
+  margin: 10px 0;
+
+  height: 35px;
+  width: 350px;
+  padding-left: 10px;
+}
+.register button {
+  margin-top: 8px;
+  background-color: transparent;
+  border: 1px solid black;
+  width: 200px;
+  height: 40px;
+
+  transition: all ease 0.5s;
+}
+
+.register button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}
