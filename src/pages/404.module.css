@@ -1,0 +1,22 @@
+.container {
+  height: 30rem;
+  text-align: center;
+  padding: 1px;
+
+  background: url("https://images.unsplash.com/photo-1623136266494-34d95990fb4c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1033&q=80")
+    fixed center;
+  background-size: 85rem 39rem;
+  background-repeat: no-repeat;
+}
+
+.container h1 {
+  font-size: 80px;
+}
+
+.container p {
+  font-size: 50px;
+}
+
+.container span {
+  color: #fba92c;
+}
