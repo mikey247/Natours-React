@@ -15,16 +15,16 @@ const Home = () => {
       >
         <div className={classes.wrapper}>
           <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ type: "spring", delay: 2, duration: 3.5 }}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "ease", delay: 2, duration: 2 }}
           >
             COME AND EXPLORE NATURE WITH US
           </motion.h1>
           <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ type: "spring", delay: 3, duration: 4 }}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: "ease", delay: 3, duration: 2 }}
           >
             START EXPLORING🌍✈
           </motion.button>

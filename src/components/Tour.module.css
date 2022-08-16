@@ -1,0 +1,27 @@
+.tour {
+  width: 20rem;
+  margin: 30px;
+}
+.tourImage {
+  height: 30rem;
+  width: 20rem;
+  object-fit: cover;
+}
+
+.tour button {
+  /* margin-left: 30px; */
+  background-color: transparent;
+  font-size: 18px;
+  height: 60px;
+  width: 200px;
+  cursor: pointer;
+  margin-top: 40px;
+
+  transition: all 0.5s ease;
+}
+
+.tour button:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.1);
+}

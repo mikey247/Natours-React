@@ -9,6 +9,7 @@ import Register from "./pages/Register";
 import { Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import NotFound from "./pages/404";
+import ToursList from "./pages/ToursList";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/tours-list" element={<ToursList />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

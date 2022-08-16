@@ -14,7 +14,7 @@ const NavBar = () => {
     >
       <div className={classes.nav}>
         <div className={classes.left}>
-          <Link to="/">Tours</Link>
+          <Link to="/tours-list">Tours</Link>
           <Link to="/">Events</Link>
           <Link to="/">Hotels</Link>
           <Link to="/">Car Rentals</Link>
