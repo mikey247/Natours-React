@@ -9,6 +9,9 @@
   margin: auto;
   text-align: center;
 }
+.offerWrapper h1 {
+  font-weight: lighter;
+}
 .top {
   font-size: 45px;
 }
@@ -42,6 +45,7 @@
 }
 .news h1 {
   font-size: 45px;
+  font-weight: lighter;
 }
 .news p {
   font-size: 30px;

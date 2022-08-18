@@ -1,0 +1,35 @@
+.loading {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.detailContainer {
+  background-color: #ffeacd;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.detail {
+  padding: 30px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.imageDiv {
+  flex: 1;
+}
+.imageDiv img {
+  width: 50rem;
+  height: 40rem;
+}
+.contentDiv {
+  flex: 1;
+  width: 40rem;
+  margin-left: 30px;
+}
