@@ -36,7 +36,7 @@ const Home = () => {
 
       <motion.div className={classes.some}>
         <div className={classes.some1}>
-          <motion.img
+          {/* <motion.img
             src={require("../images/Lafiaji-beach.jpg")}
             alt="Lafiaji Beaches"
             initial={{ opacity: 0, scale: 0 }}
@@ -48,7 +48,7 @@ const Home = () => {
               ease: "easeIn",
               // delay: 0.2,
             }}
-          />
+          /> */}
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             whileInView={{ opacity: 1, scale: 1 }}
@@ -98,7 +98,7 @@ const Home = () => {
               <button>LEARN MORE</button>
             </Link>
           </motion.div>
-          <motion.img
+          {/* <motion.img
             src={require("../images/erin-ijesha-waterfalls.jpg")}
             alt="Erin-Ijesha Waterfalls"
             initial={{ opacity: 0, scale: 0 }}
@@ -110,7 +110,7 @@ const Home = () => {
               ease: "easeIn",
               // delay: 0.2,
             }}
-          />
+          /> */}
         </motion.div>
       </motion.div>
 

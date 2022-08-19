@@ -34,9 +34,22 @@ const TourDetail = () => {
         </div>
         <div className={classes.contentDiv}>
           <h1>{tour.name}</h1>
+          <p>
+            Rating:{tour.ratingsAverage} ({tour.ratingsQuantity})
+          </p>
           <p>{tour.description}</p>
           <button type="">BOOK NOW</button>
         </div>
+      </div>
+
+      <div>
+        <h1>Reviews</h1>
+        {tour.reviews.map((review) => (
+          <div key={review.user._id}>
+            <h3>{review.user.name}</h3> <p>{review.rating} stars</p>
+            <p>{review.review}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
