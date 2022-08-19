@@ -68,25 +68,17 @@ const NavBar = () => {
           viewport={{ once: true }}
           transition={{ type: "spring", duration: 3, ease: "easeOut" }}
         >
-          {/* <ul> */}
-          {/* <li> */} <Link to="/tours-list">Tours</Link>
-          {/* </li>
-          <li> */}
+          <Link to="/tours-list">Tours</Link>
+
           <Link to="/">Events</Link>
-          {/* </li>
-          <li> */}
+
           <Link to="/">Rentals</Link>
-          {/* </li>
-          <li> */}
+
           <Link to="/">Hotels</Link>
-          {/* </li>
-          <li> */}
+
           <Link to="/register">Register</Link>
-          {/* </li>
-          <li> */}
+
           <Link to="/login">Login</Link>
-          {/* </li> */}
-          {/* </ul> */}
         </motion.div>
       )}
     </motion.div>
