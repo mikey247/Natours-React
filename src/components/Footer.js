@@ -51,7 +51,7 @@ const Footer = () => {
           <div className={classes.contacts}>
             <div>
               <BiMap />
-              1/3 lorem ipsum dolor,loreDolorem ratione is
+              1/3 lorem ipsum dolor,lore
             </div>
             <div>
               <AiOutlineMail />
@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={classes.signature}>
-        <p>Made with 💙 by mikey24_7🐱‍👤.</p>
+        <p>Made with 💙 by mikey👨🏾‍💻.</p>
       </div>
     </footer>
   );

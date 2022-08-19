@@ -49,3 +49,22 @@
 .signature p {
   text-align: center;
 }
+
+@media (max-width: 1000px) {
+  .footerContainer {
+    /* display: block; */
+    flex-direction: column;
+  }
+
+  .left {
+    padding: 5px;
+  }
+
+  .center {
+    padding: 5px;
+  }
+
+  .right {
+    padding: 5px;
+  }
+}
