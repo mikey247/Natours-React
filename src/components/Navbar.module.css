@@ -44,26 +44,9 @@ a {
   font-size: 20px;
 }
 
-.mobileNav {
-  display: none;
-}
-
+.mobileNav,
 .mobileLinks {
-  display: flex;
-  flex-direction: column;
-}
-
-.mobileLinks a {
-  list-style: none;
-  font-size: 17px;
-  text-align: center;
-  /* margin-bottom: 10px; */
-  padding: 10px;
-}
-
-.mobileLinks a:hover {
-  background-color: black;
-  color: white;
+  display: none;
 }
 
 @media (max-width: 1000px) {
@@ -81,5 +64,25 @@ a {
     justify-content: center;
     align-items: center;
     /* margin-top: 50px; */
+  }
+
+  .mobileLinks {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobileLinks a {
+    list-style: none;
+    font-size: 17px;
+    text-align: center;
+    /* margin-bottom: 10px; */
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+  }
+
+  .mobileLinks a:hover {
+    background-color: black;
+    color: white;
   }
 }

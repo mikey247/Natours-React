@@ -7,6 +7,8 @@ import { GrClose } from "react-icons/gr";
 import { useState } from "react";
 
 const NavBar = () => {
+  //
+
   const [toggle, setToggle] = useState(false);
 
   const handleToggle = () => {
@@ -66,7 +68,13 @@ const NavBar = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ type: "spring", duration: 3, ease: "easeOut" }}
+          transition={{
+            type: "spring",
+            duration: 3,
+            ease: "easeOut",
+            delayChildren: 4,
+            staggerChildren: 1,
+          }}
         >
           <Link to="/tours-list">Tours</Link>
 

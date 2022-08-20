@@ -2,18 +2,19 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import classes from "./TourDetail.module.css";
+import Map from "../components/Map";
 
 const TourDetail = () => {
   const { id } = useParams();
 
-  const [tour, setTour] = useState([]);
+  const [tour, setTour] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch(`https://natours-nu.vercel.app/api/v1/tours/${id}`)
       .then((res) => res.json())
       .then((result) => {
-        console.log(result.data.data);
+        // console.log(result.data.data);
         setTour(result.data.data);
         setIsLoading(false);
       });
@@ -24,6 +25,8 @@ const TourDetail = () => {
   if (isLoading) {
     return <h1 className={classes.loading}>Loading...</h1>;
   }
+
+  // console.log(tour.startLocation.coordinates);
 
   return (
     <div className={classes.detailContainer}>
@@ -51,6 +54,7 @@ const TourDetail = () => {
           </div>
         ))}
       </div>
+      <Map tour={tour} />
     </div>
   );
 };
