@@ -39,6 +39,7 @@ const Map = ({ tour }) => {
         mapboxAccessToken={process.env.REACT_APP_NATOURS_MAPBOX_KEY}
         mapStyle="mapbox://styles/mapbox/dark-v9"
         // style={{ width: "500px", height: "500px" }}
+        // style={{ border: "2px solid red" }}
       >
         <GeolocateControl />
         <FullscreenControl />
