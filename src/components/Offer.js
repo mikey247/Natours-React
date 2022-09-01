@@ -15,10 +15,11 @@ const Offer = () => {
         <div className={classes.offerWrapper}>
           <h1 className={classes.top}>WHAT DO WE BRING TO THE TABLE?😏</h1>
           <p>
-            We provide amazing experiences that will last you a lifetime.Doesn't
-            matter if it's single trips, couples trips, family or group trips we
-            are the best choice for you and you wont have to break the bank to
-            get the time of your life, Come over to the Natours side of life💚.
+            We provide amazing experiences that will last you a lifetime.
+            Doesn't matter if it's single trips, couples trips, family or group
+            trips we are the best choice for you and you wont have to break the
+            bank to get the time of your life, Come over to the Natours side of
+            life💚.
           </p>
           <button>LEARN MORE</button>
         </div>
@@ -33,8 +34,8 @@ const Offer = () => {
       >
         <h1>SUBSCRIBE TO OUR NEWSLETTER📰</h1>
         <p>Get latest news and updates on our latest offers.</p>
-        <div>
-          <input type="email" placeholder="Enter Your Email" />
+        <div className={classes.email}>
+          <input type="email" placeholder="Enter Your Email" /> <br />
           <button>LET'S GO</button>
         </div>
       </motion.div>

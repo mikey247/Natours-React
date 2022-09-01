@@ -6,9 +6,6 @@
   color: white;
   /* font-size: 14px; */
 }
-.announcement p {
-  margin-right: 10px;
-}
 
 /* .paragraphDiv {
   display: flex;
@@ -44,4 +41,10 @@ body {
   height: 10px;
   background: var(--red);
   transform-origin: 0%;
+}
+
+@media (max-width: 470px) {
+  .paragraph {
+    font-size: 12px;
+  }
 }

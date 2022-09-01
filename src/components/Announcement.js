@@ -12,10 +12,6 @@ const Announcement = (props) => {
     >
       <div className={classes.paragraphDiv}>
         <p className={classes.paragraph}>{props.text}</p>
-        {/* <p className={classes.paragraph}>{props.text}</p>
-        <p className={classes.paragraph}>{props.text}</p> */}
-        {/* <p className={classes.paragraph}>{props.text}</p> */}
-        {/* <p className={classes.paragraph}>{props.text}</p> */}
       </div>
     </motion.div>
   );

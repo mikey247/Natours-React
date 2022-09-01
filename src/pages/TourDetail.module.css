@@ -51,3 +51,18 @@
   color: white;
   transform: scale(1.1);
 }
+
+.reviews {
+  width: 90%;
+  margin: auto;
+}
+
+.nameRating {
+  /* display: flex;
+  align-items: center; */
+  /* justify-content: space-between; */
+}
+
+.reviewText {
+  width: 35rem;
+}

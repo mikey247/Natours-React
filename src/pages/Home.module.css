@@ -149,3 +149,36 @@
   color: white;
   transform: scale(1.1);
 }
+
+@media (max-width: 631px) {
+  .wrapper h1 {
+    font-size: 35px;
+  }
+  .some1 {
+    display: block;
+  }
+
+  .some2 {
+    display: block;
+  }
+
+  .some img {
+    width: 100%;
+    height: 45rem;
+  }
+  .some1 div,
+  .some2 div {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .some1 h1 {
+    margin-left: 30px;
+    font-weight: lighter;
+  }
+  .some1 p {
+    margin-left: 30px;
+    width: 90%;
+    font-size: 18px;
+  }
+}

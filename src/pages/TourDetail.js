@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import classes from "./TourDetail.module.css";
 import Map from "../components/Map";
+// import { AiFillStar } from "react-icons";
+import Rating from "@mui/material/Rating";
 
 const TourDetail = () => {
   const { id } = useParams();
@@ -26,31 +28,33 @@ const TourDetail = () => {
     return <h1 className={classes.loading}>Loading...</h1>;
   }
 
-  // console.log(tour.startLocation.coordinates);
-
   return (
     <div className={classes.detailContainer}>
       <div className={classes.detail}>
         <div className={classes.imageDiv}>
           <img src={tour.imageCover} alt="" />
-          {/* <Example /> */}
         </div>
         <div className={classes.contentDiv}>
           <h1>{tour.name}</h1>
           <p>
-            Rating:{tour.ratingsAverage} ({tour.ratingsQuantity})
+            <Rating name="read-only" value={tour.ratingsAverage} readOnly />
           </p>
           <p>{tour.description}</p>
           <button type="">BOOK NOW</button>
         </div>
       </div>
 
-      <div>
-        <h1>Reviews</h1>
+      <div className={classes.reviews}>
+        <h1>REVIEWS</h1>
         {tour.reviews.map((review) => (
           <div key={review.user._id}>
-            <h3>{review.user.name}</h3> <p>{review.rating} stars</p>
-            <p>{review.review}</p>
+            <div className={classes.nameRating}>
+              <h3>{review.user.name}</h3>{" "}
+              <p>
+                <Rating name="read-only" value={review.rating} readOnly />
+              </p>
+            </div>
+            <p className={classes.reviewText}>{review.review}</p>
           </div>
         ))}
       </div>

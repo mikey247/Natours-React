@@ -2,7 +2,7 @@
 
 .offerContainer {
   background-color: #9e9e9e;
-  padding: 80px;
+  padding: 50px;
 }
 .offerWrapper {
   width: 75%;
@@ -13,7 +13,7 @@
   font-weight: lighter;
 }
 .top {
-  font-size: 45px;
+  font-size: 35px;
 }
 
 .offerWrapper p {
@@ -35,39 +35,78 @@
   transform: scale(1.1);
 }
 
-.news {
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
-  text-align: center;
-  padding: 80px;
-}
 .news h1 {
-  font-size: 45px;
-  font-weight: lighter;
+  text-align: center;
 }
 .news p {
-  font-size: 30px;
+  text-align: center;
+  font-size: 25px;
 }
-.news div {
-  width: 50%;
-  height: 50px;
+
+.email {
+  padding: 20px;
+  width: 90%;
   margin: auto;
-  background-color: white;
   display: flex;
-  justify-content: space-between;
-  border: 1px solid lightgray;
+  flex-direction: column;
+  align-items: center;
 }
-.news input {
-  font-size: 20px;
-  border: none;
-  flex: 4;
-  padding-left: 20px;
+.email input {
+  width: 500px;
+  height: 40px;
 }
-.news button {
-  border: none;
+
+.email button {
+  width: 300px;
+  height: 50px;
   background-color: black;
   color: white;
-  padding: 20px;
+  border: none;
+}
+
+@media (max-width: 750px) {
+  .offerContainer {
+    padding: 10px;
+    padding-top: 1px;
+  }
+  .offerWrapper {
+    width: 100%;
+  }
+
+  .top {
+    font-size: 30px;
+  }
+  .offerWrapper button {
+    background-color: transparent;
+    font-size: 17px;
+    height: 60px;
+    width: 250px;
+  }
+
+  .email input {
+    width: 400px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 440px) {
+  .top {
+    font-size: 25px;
+  }
+
+  .offerWrapper p {
+    font-size: 17px;
+  }
+
+  .email input {
+    width: 300px;
+    height: 40px;
+  }
+  .email button {
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+  }
 }
